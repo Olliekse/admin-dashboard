@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
 body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -19,24 +29,45 @@ body {
 .left-sidebar {
   background-color: #f1f1f1;
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 6fr;
   grid-area: 1/1/3/2;
 }
 
 .right-sidebar {
   display: grid;
   grid-gap: 50px;
+  grid-template-rows: 1fr 1fr;
 }
 
-.menu {
-  height: 100%;
-  grid-area: 2/1/3/2;
+.left-sidebar li {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.left-sidebar li:nth-child(6) {
+  margin-bottom: 50px;
+}
+
+
+.left-sidebar path {
+  fill: white;
 }
 
 .logo {
-  height: 50px;
-  grid-area: 1/2/2/2;
   background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo-pic {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: white;
 }
 
 ul {
@@ -46,6 +77,62 @@ ul {
 .top-bar {
   grid-area: 1/2/2/2;
   background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.search {
+  grid-area: 1/1/1/1;
+  display: grid;
+  width: 500px;
+}
+
+.search form {
+  grid-row: 1/2;
+}
+
+.search input {
+  width: 400px;
+  height: 20px;
+  border-radius: 50px;
+  border: none;
+  padding-left: 20px;
+  background-color: lightgray;
+}
+
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  grid-row: 1/2;
+  margin-left: 20px;
+ 
+}
+
+.profile {
+  grid-area: 1/2/1/3;
+}
+
+.greeting {
+  grid-area: 2/1/2/1;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: 2/2/2/3;
+}
+
+.buttons button {
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: lightblue;
+  font-size: 15px;
 }
 
 .projects {
@@ -56,11 +143,11 @@ ul {
   
 }
 
-.project {
+/* .project {
   background-color: turquoise;
-  height: 150px;
-  width: 250px;
-}
+  height: 200px;
+  width: 300px;
+} */
 
 .announcements {
   background-color: blueviolet;
