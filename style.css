@@ -13,17 +13,16 @@ a {
 }
 
 .container {
-  background-color: rgb(17, 0, 255);
   display: grid;
   grid-template-columns: 1fr 4fr;
-  width: 100%;
 }
 
 .main-container {
+  background-color: #E2E8F0;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 50px 20px;
-  grid-gap: 20px;
+  padding: 10px 30px;
+  grid-gap: 10px;
 }
 
 .left-sidebar {
@@ -33,7 +32,7 @@ a {
   grid-area: 1/1/3/2;
 }
 
-.right-sidebar {
+.right-half {
   display: grid;
   grid-gap: 50px;
   grid-template-rows: 1fr 1fr;
@@ -52,6 +51,17 @@ a {
 
 .left-sidebar path {
   fill: white;
+}
+
+.notifications-icon {
+  height: 25px;
+  width: 25px;
+
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
 }
 
 .logo {
@@ -75,13 +85,17 @@ ul {
 }
 
 .top-bar {
-  grid-area: 1/2/2/2;
-  background-color: green;
+  grid-column: 2/3;
+  background-color: #f8fafc;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-gap: 5px;
+  padding: 20px 50px;
+}
+
+.profile-name {
+  font-weight: 600;
 }
 
 .search {
@@ -114,16 +128,15 @@ ul {
 
 .profile {
   grid-area: 1/2/1/3;
-}
-
-.greeting {
-  grid-area: 2/1/2/1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: 2/2/2/3;
+  grid-gap: 20px;
 }
 
 .buttons button {
@@ -131,24 +144,10 @@ ul {
   width: 100px;
   height: 40px;
   color: white;
-  background-color: lightblue;
+  background-color: #2593D2;
   font-size: 15px;
+  border-style: none;
 }
-
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  grid-area: 1/1/2/2;
-  
-}
-
-/* .project {
-  background-color: turquoise;
-  height: 200px;
-  width: 300px;
-} */
-
 .announcements {
   background-color: blueviolet;
   display: grid;
@@ -164,4 +163,63 @@ ul {
 
 .trending {
   background-color: chocolate;
+}
+
+.greeting {
+  grid-area: 2/1/3/2;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  
+
+}
+
+.greeting-msg {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.greeting-span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-pic_large {
+  height: 75px;
+  width: 75px;
+  place-self: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.project {
+  padding: 20px 10px;
+  background-color: #f8fafc;
+  border-left: solid 5px #EFB33B;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+}
+
+
+.project img {
+  width: 25px;
+  height: 25px;
+}
+
+.project-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: 170px;
+
+}
+
+.projects-header {
+  grid-area: 1/1/2/2;
 }
