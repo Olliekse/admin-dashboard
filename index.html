@@ -10,83 +10,117 @@
 
 <body>
   <div class="container">
-    <div class="top-bar">
-
-      <div class="search">
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <title>magnify</title>
-          <path
-            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-        </svg>
-        <form action="#">
-          <input type="text" name="search">
-        </form>
-      </div>
-      <div class="notifications"></div>
-      <div class="profile">
-        <svg class="notifications-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <title>bell-ring-outline</title>
-          <path
-            d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
-        </svg>
-        <img class="profile-pic"
-          src="https://cdn0.iconfinder.com/data/icons/cats-accessories-cartoon-style/512/al364_9-1024.png"
-          alt="woolen ball">
-        <p class="profile-name">Oliver Richardson</p>
-      </div>
-      <div class="greeting">
-        <img class="profile-pic_large"
-          src="https://cdn0.iconfinder.com/data/icons/cats-accessories-cartoon-style/512/al364_9-1024.png"
-          alt="woolen ball">
-        <p class="greeting-msg">Hi there, <br /><span class="greeting-span">Oliver Richardson (@O-Rich)</span></p>
-      </div>
-      <div class="buttons">
-        <button class="new">New</button>
-        <button class="upload">Upload</button>
-        <button class="share">Share</button>
-      </div>
+    <div class="left-sidebar">
+      <nav>
+        <div class="logo">
+          <svg class="logo-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+          </svg>
+          <p class="logo-text">Dashboard</p>
+        </div>
+        <ul class="menu">
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2.1 1 12h3v9h6v-6h4v6h6v-9h3L12 2.1z" />
+              </svg>
+              <p>Home</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M22 3H2c-1.09.04-1.96.91-2 2v14c.04 1.09.91 1.96 2 2h20c1.09-.04 1.96-.91 2-2V5a2.074 2.074 0 0 0-2-2m0 16H2V5h20v14m-8-2v-1.25c0-1.66-3.34-2.5-5-2.5-1.66 0-5 .84-5 2.5V17h10M9 7a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 9 12a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 9 7m5 0v1h6V7h-6m0 2v1h6V9h-6m0 2v1h4v-1h-4" />
+              </svg>
+              <p>Profile</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2m0 15.2L18.8 16H4V4h16v13.2z" />
+              </svg>
+              <p>Messages</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>clock-time-three</title>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M17 13H11V7H12.5V11.5H17V13Z" />
+              </svg>
+              <p>History</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M16 9h5.5L16 3.5V9M7 2h10l6 6v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2M3 6v16h18v2H3a2 2 0 0 1-2-2V6h2z" />
+              </svg>
+              <p>Tasks</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20z" />
+              </svg>
+              <p>Communities</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z" />
+              </svg>
+              <p>Settings</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M11 18h2v-2h-2v2m1-12a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+              </svg>
+              <p>Support</p>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+              </svg>
+              <p>Privacy</p>
+            </a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="left-sidebar">
-      <div class="logo">
-        <svg class="logo-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
-        </svg>
-        <p class="logo-text">Dashboard</p>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Messages</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Tasks</a></li>
-        <li><a href="#">Communities</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </nav>
     <div class="main-container">
+      <div class="top-bar">
+
+        <div class="search">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>magnify</title>
+            <path
+              d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+          </svg>
+          <form action="#">
+            <input type="text" name="search">
+          </form>
+        </div>
+        <div class="notifications"></div>
+        <div class="profile">
+          <svg class="notifications-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>bell-ring-outline</title>
+            <path
+              d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+          </svg>
+          <img class="profile-pic"
+            src="https://cdn0.iconfinder.com/data/icons/cats-accessories-cartoon-style/512/al364_9-1024.png"
+            alt="woolen ball">
+          <p class="profile-name">Oliver Richardson</p>
+        </div>
+        <div class="greeting">
+          <img class="profile-pic_large"
+            src="https://cdn0.iconfinder.com/data/icons/cats-accessories-cartoon-style/512/al364_9-1024.png"
+            alt="woolen ball">
+          <p class="greeting-msg">Hi there, <br /><span class="greeting-span">Oliver Richardson (@O-Rich)</span></p>
+        </div>
+        <div class="buttons">
+          <button class="new">New</button>
+          <button class="upload">Upload</button>
+          <button class="share">Share</button>
+        </div>
+      </div>
       <div class="left-half">
-        <h3 class="projects-header">Your Projects</h3>
+        <p class="projects-header">Your Projects</p>
         <div class="projects">
           <div class="project">
-            <h2 class="project-title">Super Cool Project</h2>
+            <p class="project-title">Super Cool Project</p>
             <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et
-              dolore magna aliqua. Vulputate enim nulla aliquet porttitor. Id diam maecenas ultricies mi eget mauris.
-              Sit
-              amet dictum sit amet justo.</p>
-            <div class="project-icons">
-              <img src="./images/fav.svg" alt="star">
-              <img src="./images/watch.svg" alt="eye">
-              <img src="./images/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="project">
-            <h2 class="project-title">Impossible App</h2>
-            <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Etiam
-              erat velit scelerisque in dictum. Velit euismod in pellentesque massa placerat duis ultricies lacus sed.
+              dolore magna aliqua. Vulputate enim nulla aliquet porttitor.
             </p>
             <div class="project-icons">
               <img src="./images/fav.svg" alt="star">
@@ -95,10 +129,10 @@
             </div>
           </div>
           <div class="project">
-            <h2 class="project-title">Ad Blocker</h2>
+            <p class="project-title">Impossible App</p>
             <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Vitae elementum curabitur vitae nunc sed. Nisl condimentum id
-              venenatis a. Egestas purus viverra accumsan in nisl nisi.</p>
+              incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="project-icons">
               <img src="./images/fav.svg" alt="star">
               <img src="./images/watch.svg" alt="eye">
@@ -106,20 +140,28 @@
             </div>
           </div>
           <div class="project">
-            <h2 class="project-title">Less Cool Project</h2>
+            <p class="project-title">Ad Blocker</p>
             <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam faucibus purus. Ut
-              pharetra sit amet aliquam id diam maecenas ultricies. Tempus iaculis urna id volutpat lacus laoreet.</p>
+              incididunt ut labore et dolore magna aliqua.</p>
+            <div class="project-icons">
+              <img src="./images/fav.svg" alt="star">
+              <img src="./images/watch.svg" alt="eye">
+              <img src="./images/share.svg" alt="share">
+            </div>
+          </div>
+          <div class="project">
+            <p class="project-title">Less Cool Project</p>
+            <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
             <div class="project-icons"><img src="./images/fav.svg" alt="star">
               <img src="./images/watch.svg" alt="eye">
               <img src="./images/share.svg" alt="share">
             </div>
           </div>
           <div class="project">
-            <h2 class="project-title">Easy Peasy App</h2>
+            <p class="project-title">Easy Peasy App</p>
             <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque. Eros in cursus turpis
-              massa tincidunt dui ut ornare lectus. At urna condimentum mattis pellentesque id nibh tortor id.</p>
+              incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque.</p>
             <div class="project-icons">
               <img src="./images/fav.svg" alt="star">
               <img src="./images/watch.svg" alt="eye">
@@ -127,11 +169,10 @@
             </div>
           </div>
           <div class="project">
-            <h2 class="project-title">Money Maker</h2>
+            <p class="project-title">Money Maker</p>
             <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Nunc sed blandit libero volutpat sed cras ornare.
-              Tellus at urna condimentum mattis pellentesque id nibh tortor id. Enim blandit volutpat maecenas
-              volutpat blandit aliquam etiam erat.</p>
+              incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="project-icons">
               <img src="./images/fav.svg" alt="star">
               <img src="./images/watch.svg" alt="eye">
@@ -139,24 +180,56 @@
             </div>
           </div>
         </div>
-        <div class="right-half">
-          <h3 class="announcements-header">Announcements</h3>
-          <div class="announcements">
-            <div class="announcement">Site Maintenance</div>
-            <div class="announcement">Community Share Day</div>
-            <div class="announcement">Updated Privacy Policy</div>
+      </div>
+
+      <div class="right-half">
+        <p class="announcements-header">Announcements</p>
+        <div class="announcements">
+          <div class="announcement">
+            <p class="announcement-title">Site Maintenance</p>
+            <p>Vestibulum condimentum mattis pellentesque id nibh tortor id...</p>
           </div>
-          <h3 class="trending-header">Trending</h3>
-          <div class="trending">
-            <div>Bob</div>
-            <div>Chris</div>
-            <div>John</div>
-            <div>Paul</div>
+          <div class="announcement">
+            <p class="announcement-title">Community Share Day</p>
+            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+          </div>
+          <div class="announcement">
+            <p class="announcement-title">Updated Privacy Policy</p>
+            <p>Phasellus at urna condimentum mattis pellentesque id nibh tortor id. Cras fringilla convallis sem...</p>
+          </div>
+        </div>
+        <p class="trending-header">Trending</p>
+        <div class="trending">
+          <div class="trending-box"><img class="trending-pic" src="./images/11919374_1-13.jpg" alt="cat-avatar">
+            <div class="trending-box-text">
+              <p class="trending-box-handle">@tegen</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="trending-box"><img class="trending-pic"
+              src="https://cdn0.iconfinder.com/data/icons/cats-accessories-cartoon-style/512/al364_9-1024.png"
+              alt="cat-avatar">
+            <div class="trending-box-text">
+              <p class="trending-box-handle">@O-Rich</p>
+              <p>Super Cool Project</p>
+            </div>
+          </div>
+          <div class="trending-box"><img class="trending-pic" src="./images/31131343_6100_4_03.jpg" alt="cat-avatar">
+            <div class="trending-box-text">
+              <p class="trending-box-handle">@kendall</p>
+              <p>Life Changing App</p>
+            </div>
+          </div>
+          <div class="trending-box"><img class="trending-pic" src="./images/12006499_9-01.jpg" alt="cat-avatar">
+            <div class="trending-box-text">
+              <p class="trending-box-handle">@alex</p>
+              <p>No Traffic Maker</p>
+            </div>
 
           </div>
         </div>
+
       </div>
-    </div>
 
 </body>
 
